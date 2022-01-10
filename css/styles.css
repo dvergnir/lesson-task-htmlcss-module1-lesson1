@@ -1,0 +1,220 @@
+@font-face {
+    font-family: 'BootsAndSpurs';
+    src: url(../fonts/BootsAndSpurs.ttf) format('truetype');
+
+}
+body {
+    font-family: 'Roboto';
+
+
+}
+
+/**Header**/
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+}
+
+.logo {
+    font-family: 'BootsAndSpurs', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 45px;
+    text-decoration: none;
+    padding: 20px;
+    
+
+
+}
+
+
+h1 {
+    font-family: BootsAndSpurs;
+    font-size: 45px;
+
+}
+
+h2 {
+    font-family: BootsAndSpurs;
+    font-size: 40px;
+
+}
+
+
+/*navigation menu*/
+
+nav ul {
+    padding: 0px 0 0 60px;
+    
+}
+nav li {
+    display: inline-block;
+    position: relative;
+   
+
+}
+nav a {
+    text-decoration: none;
+    color: #FFF;
+    margin-left: 25px;
+    font-size: 30px;
+}
+nav .current {
+    text-decoration: underline;
+}
+
+/**Welcome Section**/
+
+.welcome {
+    background-image: url('../images/home-header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: right;
+    background-position-y: bottom;
+    min-height: 70vh;
+    position: relative;
+    top: 20px;
+    max-width: 100%;
+    max-height: auto;
+
+}
+.welcome__content {
+    position: absolute;
+    top: 171px;
+    left: 289px;
+    text-align: center;
+
+}
+
+.welcome .cta {
+    text-decoration: none;
+    display: inline-block;
+    max-width: 462px;
+    max-height: 80px;
+    padding: 24px 148px 23px;
+    border-radius: 6px;
+    font-size: 25px;
+}
+
+/***Home_Content**/
+
+.home__info {
+    display: flex;
+    max-width: 1000px;
+    font-size: 35px;
+    margin: 50px auto;
+}
+
+.home__info__text {
+    flex: 1;
+}
+
+.home__info__img {
+    flex: 1; 
+}
+
+
+.info {
+    border-radius: 200px;
+}
+
+
+
+
+
+.products-list h2 {
+    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 21px;
+
+}
+
+header, footer {
+    background-color: #202020;
+    color: #fff;
+   
+}
+header a {
+    color: white;
+}
+/**Review**/
+
+.profile-pic {
+    border-radius: 50%;
+}
+.review__header {
+    display: block;
+    position: relative;
+}
+
+.review__content {
+    display: flex;
+    flex: 1
+    ;
+}
+.review  {
+    background-color: #e8e8e8;
+    font-family: Roboto;
+    font-size: 30px;
+    text-align: center;
+}
+
+/**Adirondack Red**/
+
+.adirondack__red {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+    
+
+.adirondack__red__thumbails {
+    max-width: 100px;
+    max-height: 100px;
+    
+}
+
+
+.featured--products {
+    background-color: #fbfbfb;
+    font-family: Roboto;
+    font-size: 23px;
+
+}
+.featured--price {
+    font-family: Roboto;
+    font-size: 17px;
+}
+
+    
+.cta  {
+    background-color: #bb0000;
+    color: white;
+    text-decoration: none;
+    padding: 24px 148px;
+    border-radius: 6px;
+    font-size: 25px;
+    text-transform: uppercase;
+    
+}
+.cta-small {
+    padding: 10px 39px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+.cta--sale {
+    background-color: #127300;
+    color: #fff;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 10px 30px;
+
+}
+footer  {
+    text-align: center;
+}
+
+
+

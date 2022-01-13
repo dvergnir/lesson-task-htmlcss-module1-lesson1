@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/c965e83369.js" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="grid">
     <header>
         <a href="index.html" class="logo">Guitar Kings</a>
             <nav>
@@ -23,24 +23,32 @@
                 </ul>
             </nav>
     </header>
-    <main>
-        <h1>Contact Us</h1>
-        <form>
-            <label for="name">Full name</label>
-            <input type="text" name="name" id="name">
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email">
-            <label for="guitar">Guitar</label>
-            <select id="guitar" name="Guitar">
-                <option value="Adirondack Red">Adirondack Red</option>
-                <option value="Adirondack Blue">Adirondack Blue</option>
-                <option value="Adirondack Green">Adirondack Green</option>
-             </select>
-            <input type="checkbox" name="newsletter" id="newsletter">
-            <label for="newsletter"> Sign up for email updates.</label>
-            <label for="message">Message</label>
-            <textarea name="message" id="message"></textarea>
-            <input type="submit" value="Send Now" class="cta">    
+    <main class="contact">
+        <h1 class="contact__header">Contact Us</h1>
+        <form method="POST">
+            <div class="form-wrapper">
+                <section>
+                    <label for="name">Full name</label>
+                    <input type="text" name="name" id="name">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="guitar">Guitar</label>
+                    <select id="guitar" name="Guitar">
+                        <option value="Adirondack Red">Adirondack Red</option>
+                        <option value="Adirondack Blue">Adirondack Blue</option>
+                        <option value="Adirondack Green">Adirondack Green</option>
+                    </select>
+                    <div>
+                        <input type="checkbox" name="newsletter" id="newsletter">
+                        <label for="newsletter"> Sign up for email updates.</label>  
+                    </div> 
+                </section>
+                <section>
+                    <label for="message">Message</label>
+                    <textarea name="message" id="message"></textarea>
+                </section>
+            </div>
+            <input type="submit" value="Send Now" class="cta"> 
         </form>
     </main>
     <footer>

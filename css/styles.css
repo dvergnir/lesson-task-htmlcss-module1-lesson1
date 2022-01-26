@@ -9,12 +9,17 @@ body {
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
     margin: 0;
-
-
 }
 
 
+:root {
+    --boots: 'BootsAndSpurs', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --bigfont: '45px';
+}
 
+img {
+    width: 100%;
+}
 /**Header**/
 
 header {
@@ -25,11 +30,19 @@ header {
 
 }
 
+header, footer {
+    background-color: #202020;
+    color: #fff;
+
+
+}
+
 .logo {
-    font-family: 'BootsAndSpurs', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 45px;
+    font-family: var(--boots);
     text-decoration: none;
     padding: 20px;
+    color: #FFF;
+    font-size: 45px;
     
 
 
@@ -37,14 +50,14 @@ header {
 
 
 h1 {
-    font-family: BootsAndSpurs;
-    font-size: 45px;
+    font-family: var(--boots);
+    font-size: var(--bigfont);
 
 }
 
 h2 {
     font-family: BootsAndSpurs;
-    font-size: 40px;
+    font-size: 30px;
 
 }
 
@@ -71,265 +84,6 @@ nav .current {
     text-decoration: underline;
 }
 
-/**Welcome Section**/
-
-.welcome {
-    background-image: url('../images/home-header.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: right;
-    background-position-y: bottom;
-    min-height: 70vh;
-    position: relative;
-    top: 20px;
-    max-width: 100%;
-    max-height: auto;
-
-}
-.welcome__content {
-    position: absolute;
-    top: 100px;
-    left: 100px;
-    text-align: center;
-
-}
-
-.welcome .cta {
-    text-decoration: none;
-    display: inline-block;
-    max-width: 462px;
-    max-height: 80px;
-    padding: 24px 148px 23px;
-    border-radius: 6px;
-    font-size: 25px;
-}
-
-/***Home_Content**/
-
-.home__info, .review__content {
-    display: flex;
-    max-width: 1000px;
-    margin: 50px auto;
-    padding: 0 50 0 0;
-}
-
-.home__info > *, .review__content > * {
-    flex: 1;
-}
-
-.home__info li {
-    margin: 10px;
-}
-
-
-.info {
-    width: 100%;
-    height: auto;
-    border-radius: 100px;
-    
-}
-
-
-
-
-
-.products-list h2 {
-    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 21px;
-
-}
-
-header, footer {
-    background-color: #202020;
-    color: #fff;
-   
-}
-header a {
-    color: white;
-}
-/**Review**/
-
-    
-
-
-.profile_img {
-    border-radius: 50%;
-    max-width: 80px;
-    float: right;
-}
-
-.review  {
-    background-color: #e8e8e8;
-    font-family: Roboto;
-    text-align: center;
-    padding: 30px;
-}
-
-.review__content {
-    display: flex;
-    max-width: 1000px;
-    text-align: left;
-    
-}
-
-.review__content div {
-    margin: 50px;
-}
-
-.review__name {
-    display: block;
-}
-
-/**View Guitars**/
-
-.featured {
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-}
-
-.featured--products_container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 10px;
-    text-align: left;
-    padding: 50px;
-}
-
-.featured--products {
-    display: inline;
-}
-
-
-.featured--products {
-    background-color: #fbfbfb;
-    font-family: Roboto;
-}
-.featured--price {
-    font-family: Roboto;
-    font-size: 17px;
-}
-
-/**.featured--products.featured {
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-}
-
-.featured--products_container {
-    display: flex;
-    
-}
-
-.featured--products_container > * {
-    flex: 1;
-}
-
-.view-guitars_img {
-    width: 10px;
-}
-
-
-/**Guitars**/
-
-.products__page {
-    max-width: 1000px;
-    margin: auto;
-    text-align: center;
-
-}
-
-.products-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin: 50px;
-}
-.product-page__image {
-    width: 100%;
-}
-
-.products-list div {
-    padding: 10px;
-    text-align: left;
-}
-
-
-/**Adirondack Red**/
-
-.grid {
-    display: grid;
-    grid-template-rows: auto 1fr auto;
-    min-height: 100vh;
-}
-
-
-.product__specific {
-    display: flex;
-    max-width: 1000px;
-    margin: 50px auto;
-    flex: 1;
-    
-}
-
-.product-image__thumbnails {
-    max-width: 550px;
-    display: flex;
-    gap: 10px;
-    margin-top: 5px;
-    
-}
-
-.product__image {
-    width: 100%;
-}
-    
-.product-specific__details {
-    width: 100%;
-    padding: 0 0 0 50px;
-}
-
-.product-specific__details .cta {
-    display: block;
-    width: 97px;
-    margin: auto;
-}
-
-.product-specific__price {
-    font-size: 25px;
-}
-/**Contact**/
-
-.contact {
-    width: 1000px;
-    margin: 50px auto;
-    text-align: center;
-}
-
-
-input,
-select,
-textarea {
-    border: 1px solid #c4c4c4;
-    border-radius: 5px;
-    margin: 10px 10px 10px 0;
-    padding: 10px;
-}
-
-textarea {
-    height: 100%;
-}
-.form-wrapper {
-    display: flex;
-}
-
-.form-wrapper > * {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-}
-
-
 
     
 .cta  {
@@ -339,8 +93,27 @@ textarea {
     padding: 24px 148px;
     border-radius: 6px;
     text-transform: uppercase;
-    
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
 }
+.cta:before {
+    content: '';
+    padding: 24px 20px;
+    background-color: #FFF;
+    transform: rotate(30deg);
+    position: absolute;
+    height: 100px;
+    top: -40px;
+    left: -100px;
+    transition: left ease-in-out 1s;
+    opacity: 0.3;
+
+}
+.cta:hover:before {
+    left: 110%;
+}
+
 
 
 .cta-small {
@@ -359,14 +132,4 @@ textarea {
 footer  {
     text-align: center;
     padding: 10px;
-}
-
-
-
-/** Media Queries
----------------------->**/
-
-@media (min-width: 1024px) {
-    
-    
 }
